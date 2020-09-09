@@ -1,0 +1,61 @@
+[user]
+name = Luis Fernando Dresch
+email = 66801762+luisfdresch@users.noreply.github.com
+
+
+[core]
+editor = vim
+excludesfile = /etc/gitignore
+
+
+[commit]
+verbose = true
+
+
+[push]
+followtags = true
+
+
+[fetch]
+prune = true
+recursesubmodules = true
+
+
+[branch]
+autosetupmerge  = always  # always set tracking
+autosetuprebase = always  # always rebase on `pull`
+
+
+[rebase]
+autosquash = true
+autostash = true
+
+
+[diff]
+mnemonicprefix = true
+renames = copy
+submodule = log
+algorithm = histogram
+
+
+[log]
+abbrevcommit = true
+decorate = true
+follow = true
+
+
+[rerere]
+autoupdate = true
+enabled = true
+
+
+[status]
+submodulesummary = true
+showuntrackedfiles = all
+short = true
+branch = true
+
+
+[tag]
+sort = version:refname
+
