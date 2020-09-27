@@ -20,7 +20,7 @@ filetype off
 syntax on
 
 " For plugins to load correctly
-filetype plugin indent on
+" filetype plugin indent on
 
 " Disable the default Vim startup message.
 set shortmess+=I
@@ -34,7 +34,7 @@ set number
 " This is useful because you can tell, at a glance, what count is needed to
 " jump up or down to a particular line, by {count}k to go up or {count}j to go
 " down.
-set relativenumber
+" set relativenumber
 
 " Always show the status line at the bottom, even if you only have one window open.
 set laststatus=2
@@ -94,4 +94,19 @@ autocmd FileType make setlocal noexpandtab
 autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 
 nnoremap ; :
+
+call plug#begin('~/.local/share/nvim/plugged')
+Plug 'airblade/vim-gitgutter'
+Plug 'JuliaEditorSupport/julia-vim'
+call plug#end()
+
+" GitGutter
+set signcolumn=yes
+set updatetime=700
+let g:gitgutter_map_keys = 0
+highlight clear SignColumn
+highlight GitGutterAdd ctermfg=2
+highlight GitGutterChange ctermfg=3
+highlight GitGutterDelete ctermfg=1
+highlight GitGutterChangeDelete ctermfg=4
 
