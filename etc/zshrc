@@ -113,6 +113,13 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+
+autoload -Uz compinit
+compinit
+# Completion for kitty
+kitty + complete setup zsh | source /dev/stdin
+
+
 alias vim=nvim
 alias http=curlie
 
