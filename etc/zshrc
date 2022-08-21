@@ -122,4 +122,6 @@ kitty + complete setup zsh | source /dev/stdin
 
 alias vim=nvim
 alias http=curlie
+alias ssh="kitty +kitten ssh"
 
+export PATH=/home/luisfdresch/balena-cli:/home/luisfdresch/.local/bin:/home/luisfdresch/miniconda3/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/home/luisfdresch/bin:/var/lib/snapd/snap/bin
