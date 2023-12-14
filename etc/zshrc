@@ -68,9 +68,6 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
-
-source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
@@ -125,3 +122,10 @@ alias http=curlie
 alias ssh="kitty +kitten ssh"
 
 export PATH=/home/luisfdresch/balena-cli:/home/luisfdresch/.local/bin:/home/luisfdresch/miniconda3/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/home/luisfdresch/bin:/var/lib/snapd/snap/bin
+plugins=(
+    git
+    zsh-syntax-highlighting
+    zsh-autosuggestions
+    )
+fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
+source $ZSH/oh-my-zsh.sh
