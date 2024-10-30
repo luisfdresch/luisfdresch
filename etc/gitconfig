@@ -8,6 +8,10 @@ editor = nvim
 excludesfile = /etc/gitignore
 
 
+[init]
+defaultbranch = main
+
+
 [commit]
 verbose = true
 
